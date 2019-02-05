@@ -1,0 +1,4 @@
+[plugin]
+description = "dokku plugin to install cairo 1.16+ on ubuntu"
+version = "1.0.0"
+[plugin.config]
