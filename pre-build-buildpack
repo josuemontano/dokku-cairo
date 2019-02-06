@@ -12,7 +12,7 @@ COMMAND=$(cat <<EOF
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
-apt-get upgrade
+apt-get upgrade -y -qq
 apt-get install -y -qq gdebi
 
 wget http://launchpadlibrarian.net/405836989/libfreetype6_2.9.1-3_amd64.deb
