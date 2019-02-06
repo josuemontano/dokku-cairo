@@ -1,0 +1,14 @@
+dokku_log_info1() {
+  declare desc="log info1 formatter"
+  echo "-----> $*"
+}
+
+dokku_log_info2() {
+  declare desc="log info2 formatter"
+  echo "=====> $*"
+}
+
+dokku_log_verbose() {
+  declare desc="log verbose formatter"
+  echo "       $*"
+}

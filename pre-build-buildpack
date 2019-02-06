@@ -3,7 +3,7 @@
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
 APP="$1"; IMAGE="dokku/$APP"
-dokku_log_verbose "Installing cairo and dependencies"
+dokku_log_info1 "Installing cairo and dependencies"
 
 DIR=/app
 
@@ -33,3 +33,5 @@ id=$(docker run -d $IMAGE /bin/bash -e -c "$COMMAND")
 docker attach $id
 test $(docker wait $id) -eq 0
 docker commit $id $IMAGE > /dev/null
+
+dokku_log_verbose "done"
