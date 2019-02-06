@@ -13,7 +13,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
 apt-get upgrade -y -qq
-apt-get install -y -qq gdebi
+apt-get install gdebi sudo -y -qq  # sudo is installed so it is not autoremoved in the next step
 apt-get --purge autoremove libcairo2 -y -qq
 
 wget http://launchpadlibrarian.net/405836989/libfreetype6_2.9.1-3_amd64.deb
