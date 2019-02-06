@@ -19,10 +19,10 @@ wget http://launchpadlibrarian.net/405836989/libfreetype6_2.9.1-3_amd64.deb
 wget http://launchpadlibrarian.net/408231974/fontconfig-config_2.13.1-2ubuntu2_all.deb
 wget http://launchpadlibrarian.net/408231984/libfontconfig1_2.13.1-2ubuntu2_amd64.deb
 wget http://launchpadlibrarian.net/403060691/libcairo2_1.16.0-2_amd64.deb
-gdebi libfreetype6_2.9.1-3_amd64.deb --no-interaction
-gdebi fontconfig-config_2.13.1-2ubuntu2_all.deb --no-interaction
-gdebi libfontconfig1_2.13.1-2ubuntu2_amd64.deb --no-interaction
-gdebi libcairo2_1.16.0-2_amd64.deb --no-interaction
+gdebi libfreetype6_2.9.1-3_amd64.deb --n -q
+gdebi fontconfig-config_2.13.1-2ubuntu2_all.deb --n -q
+gdebi libfontconfig1_2.13.1-2ubuntu2_amd64.deb --n -q
+gdebi libcairo2_1.16.0-2_amd64.deb --n -q
 
 sleep 1 # wait so that docker run has not exited before docker attach
 EOF
