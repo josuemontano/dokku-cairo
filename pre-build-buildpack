@@ -26,7 +26,7 @@ gdebi fontconfig-config_2.13.1-2ubuntu2_all.deb --n -q
 gdebi libfontconfig1_2.13.1-2ubuntu2_amd64.deb --n -q
 gdebi libcairo2_1.16.0-2_amd64.deb --n -q
 
-apt-get install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+apt-get install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info -y -qq
 
 sleep 1 # wait so that docker run has not exited before docker attach
 EOF
